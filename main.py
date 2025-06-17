@@ -25,23 +25,31 @@ def download_image_with_user_agent(url, path):
         out_file.write(response.read())
 # 熟したトマト画像
 ripe_urls = [
+    "https://www.ja-sakai.or.jp/wp-content/uploads/2022/06/3248b2c83a93dbe3f82b3aef876697dd-870x720.png",
+    "https://i.ytimg.com/vi/yzCWsHSl-_Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAiK__c8J-WMdwAW398GmNXClu3hg",
+    "https://media.delishkitchen.tv/article/1381/8aur1z85c.jpeg?version=1644384652",
     "https://www.kewpie.co.jp/ingredients/cat_assets/img/vegetable/tomato/photo02.jpg",
-#    "https://buna.info/wp-content/uploads/2019/07/fc6927a4cd7fc6f068de9eb5d3ae4aff.jpg",
-#    "https://agri.mynavi.jp/wp-content/uploads/2018/03/8567_tomato2_hosei-1.jpg",
-#    "https://www.hyponex.co.jp/yasai_daijiten/websys/wp-content/uploads/2020/08/%E5%A4%A7%E7%8E%89%E3%83%88%E3%83%9E%E3%83%88%E6%A1%83%E5%A4%AA%E9%83%8E-770x475.jpg",
-#    "https://www.jasendai.or.jp/aguri/vegetable/001/img/01.jpg",
-#    "https://www.zennoh.or.jp/cb/product/ssi/assets_c/2021/02/%E3%83%88%E3%83%9E%E3%83%88-thumb-600xauto-104524.jpg",
-#    "https://buna.info/wp-content/uploads/2019/07/fc6927a4cd7fc6f068de9eb5d3ae4aff.jpg",
+    "https://buna.info/wp-content/uploads/2019/07/fc6927a4cd7fc6f068de9eb5d3ae4aff.jpg",
+    "https://agri.mynavi.jp/wp-content/uploads/2018/03/8567_tomato2_hosei-1.jpg",
+    "https://www.hyponex.co.jp/yasai_daijiten/websys/wp-content/uploads/2020/08/%E5%A4%A7%E7%8E%89%E3%83%88%E3%83%9E%E3%83%88%E6%A1%83%E5%A4%AA%E9%83%8E-770x475.jpg",
+    "https://www.jasendai.or.jp/aguri/vegetable/001/img/01.jpg",
+    "https://www.zennoh.or.jp/cb/product/ssi/assets_c/2021/02/%E3%83%88%E3%83%9E%E3%83%88-thumb-600xauto-104524.jpg",
+    "https://buna.info/wp-content/uploads/2019/07/fc6927a4cd7fc6f068de9eb5d3ae4aff.jpg",
 ]
 # 未熟トマト画像
 unripe_urls = [
+    "https://oishii.iijan.or.jp/hubfs/Imported_Blog_Media/20160803tomato12.jpg",
+    "https://abiko-chisan.com/wp-content/uploads/2016/08/1n.jpg",
+    "https://www.olive-hitomawashi.com/column/7406_1.jpg",
+    "https://pseco.blob.core.windows.net/pseco/11449/Salina_1.jpg",
+    "https://www.marutomo-chubu.com/wp01/wordpress/wp-content/uploads/2009/01/ff656f312c53f15f0d553dd70267bf27-1000x630.jpg",
+    "https://www.hyponex.co.jp/yasai_daijiten/websys/wp-content/uploads/2020/08/%E3%82%AB%E3%83%A9%E3%83%95%E3%83%AB%E3%83%9F%E3%83%8B%E3%83%88%E3%83%9E%E3%83%88%E7%B7%91-676x451.jpg",
     "https://t4.ftcdn.net/jpg/12/96/51/83/360_F_1296518356_792Sc2tatztKEzRvRsLMrAmwuTDfZqKb.jpg",
-#    "https://d3cmdai71kklhc.cloudfront.net/post_watermark/marketplace/252027/mp_20220429-171846519_fcyuq.jpg",
-#    "https://png.pngtree.com/png-vector/20240727/ourlarge/pngtree-green-tomatoes-unripe-nutrition-eat-png-image_13261918.png",
-#    "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kaedeya/20220730/20220730080552.jpg",
-#    "https://thumb.ac-illust.com/74/74a38f0555072e4e2b40b30e55b6090b_t.jpeg",
-#    "https://www.seikatu-cb.com/img/hozomiwa16/tomatotui1.webp",
-#    "https://racssblog.net/wp-content/uploads/2019/11/88cd6dbec5153a55381a7b010b97c4cf_s.jpg",
+    "https://d3cmdai71kklhc.cloudfront.net/post_watermark/marketplace/252027/mp_20220429-171846519_fcyuq.jpg",
+    "https://cdn-ak.f.st-hatena.com/images/fotolife/k/kaedeya/20220730/20220730080552.jpg",
+    "https://thumb.ac-illust.com/74/74a38f0555072e4e2b40b30e55b6090b_t.jpeg",
+    "https://www.seikatu-cb.com/img/hozomiwa16/tomatotui1.webp",
+    "https://racssblog.net/wp-content/uploads/2019/11/88cd6dbec5153a55381a7b010b97c4cf_s.jpg",
 ]
 
 # フォルダ準備
