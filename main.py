@@ -1,6 +1,5 @@
 # ========================================================
 # このソースコードは1ファイルにまとまっています。
-# ChatGPT利用
 # 授業提出用
 # Google Colobでの動作を想定しています
 # 各機能ごとに「=====」で区切り、コメントで分割位置を示しています。
@@ -8,7 +7,7 @@
 # ルート直下にしてほしいです
 # use package
 # ColabTurtlePlus tensorflow pillow matplotlib
-# © 2025 Maruyama koushirou(https://github.com/TanakaTakeshikun/ImageCheck)
+# © 2025 Maruyama koushirou(https://github.com/MaruyamaKoushirou/ImageCheck)
 # License: MIT
 # ========================================================
 
@@ -76,9 +75,10 @@ def load_and_resize_images(dir_path, label, size=(64,64)):
     X, y = [], []
     for fname in os.listdir(dir_path):
         path = os.path.join(dir_path, fname)
-        img = Image.open(path).convert('RGB').resize(size)
-        X.append(np.array(img))
-        y.append(label)
+        if os.path.isfile(path): 
+            img = Image.open(path).convert('RGB').resize(size)
+            X.append(np.array(img))
+            y.append(label)
     return np.array(X), np.array(y)
 
 X_ripe, y_ripe = load_and_resize_images("./dataset/ripe", 1)
